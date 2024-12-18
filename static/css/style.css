@@ -292,88 +292,99 @@ body {
     }
 
     
-/* Header */
-.header {
+header {
     text-align: center;
-    background-color: #222;
+    background: linear-gradient(135deg, #3D0000, #570505);
     color: white;
-    padding: 20px;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 
-.header p {
-    font-size: 1.2rem;
-    margin: 10px 0 0;
+header p {
+    font-size: 1.3rem;
 }
 
-/* Membership Container */
+/* Membership Cards */
 .membership-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 20px;
-    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem;
+    margin-bottom: 6rem;
 }
 
-/* Membership Card */
 .membership-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    padding: 20px;
+    background: #F5F5F5;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    width: 300px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    color: #3D0000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .membership-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .membership-card h2 {
-    margin: 0;
     font-size: 1.8rem;
-    color: #222;
+    margin-bottom: 1rem;
 }
 
 .membership-card .price {
-    font-size: 2rem;
-    color: #ff5733;
-    margin: 15px 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #570505;
+    margin: 1rem 0;
 }
 
 .membership-card ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 20px 0;
-    font-size: 1rem;
-    color: #555;
+    margin: 1.5rem 0;
 }
 
 .membership-card ul li {
-    margin: 10px 0;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
 }
 
-/* Button */
-.btn {
-    background-color: #ff5733;
+.membership-card .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #3D0000;
     color: white;
-    border: none;
-    padding: 10px 20px;
     font-size: 1rem;
-    border-radius: 5px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #e94e2c;
+.membership-card .btn:hover {
+    background: #570505;
+}
+
+/* Plan Colors */
+.basic-plan {
+    border-top: 5px solid #A05252;
+}
+
+.premium-plan {
+    border-top: 5px solid #B22222;
+}
+
+.elite-plan {
+    border-top: 5px solid #7A1E1E;
 }
 
 /* Footer */

@@ -14,7 +14,7 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
 
   <body>
@@ -31,7 +31,9 @@
 
       <div class="navbar-extra">
         <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="Membership.html" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="{{ url_for('membership') }}" id="shopping-cart">
+            <i data-feather="shopping-cart"></i>
+        </a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
@@ -57,7 +59,7 @@
 
         <div class="row">
             <div class="about-img">
-                <img src="img/tentang-kami.jpg" alt="Tentang Kami">
+                <img src="{{ url_for('static', filename='img/tentang-kami.jpg') }}" alt="Tentang Kami">
         </div>
         <div class="content">
             <h3>YOU Should Be A GymRat!</h3>
@@ -77,37 +79,37 @@
     
       <div class="row">
         <div class="gym-card">
-          <img src="img/BARBEL.jpg" alt="Barbel">
+          <img src="{{ url_for('static', filename='img/BARBEL.jpg') }}" alt="Barbel">
           <h3 class="gym-card-title">
             Barbel
           </h3>
         </div>
         <div class="gym-card">
-          <img src="img/dumbbell.jpg" alt="dumbbell">
+          <img src="{{ url_for('static', filename='img/dumbbell.jpg') }}" alt="dumbbell">
           <h3 class="gym-card-title">
             Dumbbell
           </h3>
         </div>
         <div class="gym-card">
-          <img src="img/lat-pulldown-machine.jpg" alt="lat-pulldown-machine">
+          <img src="{{ url_for('static', filename='img/lat-pulldown-machine.jpg') }}" alt="lat-pulldown-machine">
           <h3 class="gym-card-title">
             Lat pulldown machine
           </h3>
         </div>
         <div class="gym-card">
-          <img src="img/pec-dec.jpg" alt="pec-dec">
+          <img src="{{ url_for('static', filename='img/pec-dec.jpg') }}" alt="pec-dec">
           <h3 class="gym-card-title">
             Pec dec
           </h3>
         </div>
         <div class="gym-card">
-          <img src="img/squat-rack.jpg" alt="squat-rack">
+          <img src="{{ url_for('static', filename='img/squat-rack.jpg') }}" alt="squat-rack">
           <h3 class="gym-card-title">
             Squat rack
           </h3>
         </div>
         <div class="gym-card">
-          <img src="img/treadmill.jpg" alt="treadmill">
+          <img src="{{ url_for('static', filename='img/treadmill.jpg') }}" alt="treadmill">
           <h3 class="gym-card-title">
             Treadmill
           </h3>
