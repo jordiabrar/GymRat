@@ -4,7 +4,7 @@ import stripe
 app = Flask(__name__)
 
 # Set your Stripe secret key
-stripe.api_key = "sk_test_51QXOwlLwecxmSglFHD76yLuFj6IvkyuKksbaijIkDzFlRxPzUCX80YQP45zRJKtizB3QjUULzHb8H8fS5lrZBHRC00HGyqXcCN"  # Replace with your Stripe Secret Key
+stripe.api_key = ""  # Replace with your Stripe Secret Key
 
 YOUR_DOMAIN = "http://localhost:5000"
 
@@ -24,9 +24,9 @@ def create_checkout_session():
 
         # Map plan types to price IDs
         price_mapping = {
-            "Basic": "price_1QXOzBLwecxmSglFQztesHlt",   # Replace with your actual Stripe price IDs
-            "Premium": "price_1QXPNjLwecxmSglFAdBkCViE",
-            "Elite": "price_1QXPOYLwecxmSglF0Hvkuw5v"
+            "Basic": "",   # Replace with your actual Stripe price IDs
+            "Premium": "",
+            "Elite": ""
         }
 
         # Get the price ID based on the selected plan
